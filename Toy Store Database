@@ -1,0 +1,23 @@
+Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
+
+
+CREATE TABLE Toys (id INTEGER PRIMARY KEY, Name TEXT, Color TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO Toys VALUES (1, "balls", "purple",3, 2);
+Insert into Toys values (2, "dolls", "pink", 5, 10);
+Insert into Toys Values (3, "cars", "purple", 1, 5); 
+Insert into Toys Values (4, "balls", "pink", 3, 2);
+Insert into Toys Values (5, "balloons", "variety", 6, 1); 
+Insert into Toys Values (6, "books", "mix", 7, 3); 
+Insert into Toys Values (7, "cars", "blue", 1, 5); 
+Insert into Toys Values (8, "cars", "red", 1, 5);
+Insert into Toys Values (9, "cars", "green", 1, 5);
+Insert into Toys Values (10, "balls", "red", 3, 2);
+Insert into Toys Values (11, "balls", "purple", 3, 2);
+Insert into Toys Values (12, "balls", "blue", 3, 2);
+Insert into Toys Values (13, "baby dolls", "variety", 13, 10);
+Insert into Toys Values (14, "small baby dolls", "variety", 13, 8);
+Insert into Toys Values (15, "large baby dolls", "variety", 13,12);
+SELECT * FROM toys ORDER by price;
+SELECT SUM (quantity) FROM Toys;
